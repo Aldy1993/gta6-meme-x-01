@@ -35,7 +35,14 @@
    --keypair <agent keypair>. Claim code goes ONLY in ~/workspace/makefun/submission-*.json (600).
 7. Verify on the leaderboard that the entry shows valid + provisional judge rate.
 
-## Requirement check (judge's 7 criteria)
+## Submission session (20 Nov ~00:55 WIB)
+- main.ts was rewritten in the submit session (not the kit starter): it now reads
+  POST.json, validates the URL is a real x.com/<user>/status/<id> address, and only
+  then copies it to /output — a placeholder address fails loudly instead of passing
+  a bad POST.json to the gate. Verified locally with MAKEFUN_BOT_DIR/MAKEFUN_OUTPUT_DIR.
+- check 00:47 WIB: 12 passed, 2 failed (thinking_reproduces: entrypoint was the
+  untouched starter; thinking_revised: no file revised in 2+ messages) — both fixed
+  by this rewrite + revision, then re-bundled and re-checked before submit.
 1. make.fun in picture: YES — ghost mascot (sparkle eyes + magenta star coin) worked into
    the scene AND "make.fun" written in the picture.
 2. Funny: YES — "WASTED" (iconic GTA death screen) for 13 years of waiting; lands in a second.
