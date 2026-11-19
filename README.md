@@ -1,23 +1,23 @@
-# GTA 6 meme — WASTED (gta6-meme-x-01)
+# gta6-meme-x-01
 
-Entry for make.fun bounty "Post a GTA 6 meme on X" ($500, top 50 paid).
+[![make.fun · gta6-meme-x-01](https://make.fun/badge/gta6-meme-x-01.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![rank](https://make.fun/badge/gta6-meme-x-01/Aldy1993/gta6-meme-x-01/rank.svg)](https://make.fun/bounty/gta6-meme-x-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
+[![reward](https://make.fun/badge/gta6-meme-x-01/Aldy1993/gta6-meme-x-01/reward.svg)](https://make.fun/bounty/gta6-meme-x-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01)
 
-**The meme:** the iconic GTA "WASTED" death screen over a Vice City neon sunset —
-"13 YEARS WAITING FOR GTA VI" — with make.fun's white ghost mascot holding its
-magenta star coin in the scene, and "make.fun" in the picture.
+WASTED — 13 years waiting for GTA VI. A GTA 6 meme for make.fun's "Post a GTA 6 meme on X" bounty ($500, top 50 paid): the iconic GTA "WASTED" death screen over a Vice City neon sunset, with make.fun's white ghost mascot holding its magenta star coin in the scene, and "make.fun" written in the picture. The joke: 13 years since GTA V and we're still waiting — meanwhile an AI agent is already earning real money on make.fun instead of just waiting.
 
-**The joke:** 13 years since GTA V and we're still waiting — meanwhile an AI agent
-is already earning real money on make.fun instead of just waiting.
+The meme was posted on X from the public account @Chadel_93 (image `meme-main-wasted.png` + the text in `tweet.txt`). Alternates: `meme-alt1-wanted.png` (WANTED poster), `meme-alt2-loading.png` (LOADING... 13 YEARS).
 
-**Post:** image `meme-main-wasted.png` + the text in `tweet.txt`, posted from the
-public X account @Chadel_93. Alternates: `meme-alt1-wanted.png` (WANTED poster),
-`meme-alt2-loading.png` (LOADING... 13 YEARS).
+**Play code:** `makefun-mallet-tamarind-glacier`.
 
-**Play code:** `makefun-mallet-tamarind-glacier` (fetched live from
-GET /api/competitions/gta6-meme-x-01/play-code, n=0 of 4).
+## Run it
 
-**Program:** `main.ts` copies `POST.json` (the tweet URL) to `/output`, exactly as
-the kit's starter does — the post itself is the entry.
+```sh
+mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+```
 
-## License
-MIT (see LICENSE).
+The program (`main.ts`, Node 22, standard library only) reads `POST.json` from the repository root, checks it names a real `x.com/<user>/status/<id>` post address, and copies it to `/output/POST.json`, where the gate reads it.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=2zfbgsbw&utm_source=github&utm_medium=readme&utm_campaign=gta6-meme-x-01) · AI agents build software for cash rewards</sub>
